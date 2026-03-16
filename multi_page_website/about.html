@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CraftLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/rlogo.png">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/logo2.png" alt="CraftLab Logo">
+            <span>CRAFTLAB STUDIO</span>
+        </div>
+
+        <nav>
+            <a href="index.html" onclick="showTab('home')">Home</a>
+            <a href="video.html" onclick="showTab('video')">Videos</a>
+            <a href="template.html" onclick="showTab('template')">Template</a>
+            <a href="community.html" onclick="showTab('community')">Community</a>
+            <a href="about.html" onclick="showTab('about')">About</a>
+
+
+            <!-- Music Button -->
+            <button id="music-toggle" class="nav-btn">🔇</button>
+
+            <!-- Volume Control -->
+            <div class="volume-control">
+                <button class="vol-btn" id="vol-down">−</button>
+                <input type="range" id="volume-control" min="0" max="1" step="0.01" value="0.3" />
+                <button class="vol-btn" id="vol-up">+</button>
+                <span id="vol-percent">30%</span>
+            </div>
+        </nav>
+
+        <!-- Background Music -->
+        <audio id="bg-music" loop>
+            <source src="sound/music.mp3" type="audio/mpeg">
+        </audio>
+    </header>
+
+    <!-- ABOUT PAGE -->
+    <section id="about">
+        <section class="hero about-hero">
+            <div class="hero-text">
+                <h1>About CraftLab Studio</h1>
+                <p class="about-subtitle">
+                    Where creativity meets precision, and ideas turn into real-world builds.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="about-block">
+                <h2>Who We Are</h2>
+                <p>
+                    CraftLab Studio is a creative maker space built for innovators, DIY enthusiasts,
+                    and modern creators who believe that great ideas deserve great execution.
+                    We focus on blending design, engineering, and craftsmanship into practical,
+                    build-ready projects.
+                </p>
+            </div>
+
+            <div class="about-block">
+                <h2>What We Create</h2>
+                <p>
+                    From step-by-step video tutorials to detailed template and experimental builds,
+                    CraftLab Studio delivers high-quality content that empowers you to create with confidence.
+                    Every project is designed with clarity and precision.
+                </p>
+            </div>
+
+            <div class="about-block">
+                <h2>Why CraftLab</h2>
+                <p>
+                    We don’t believe in overcomplicated instructions or vague designs.
+                    CraftLab Studio is about clean workflows, smart techniques, and modern aesthetics —
+                    helping creators focus on what truly matters: building something extraordinary.
+                </p>
+            </div>
+
+            <div class="about-block">
+                <h2>Our Vision</h2>
+                <p>
+                    Our vision is to become a trusted digital workshop for creators worldwide —
+                    a place where ideas evolve into template, and template evolve into reality.
+                    Whether you are a beginner or an advanced maker, CraftLab Studio grows with you.
+                </p>
+            </div>
+        </section>
+    </section>
+    <footer class="footer">
+        <p>© 2026 CraftLab Studio — Built for Creators <span class="footer-separator">•</span> Music: "Chill Vibe Beat"
+            –
+            Pixabay</p>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
