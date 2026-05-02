@@ -215,26 +215,3 @@ function comingSoonVideo() {
   modal.style.display = "flex";
 }
 
-// Remove contenteditable from all elements
-document.querySelectorAll('[contenteditable]').forEach(el => {
-    el.removeAttribute('contenteditable');
-});
-
-// Prevent any unwanted autofocus
-window.addEventListener('load', () => {
-    if (document.activeElement) {
-        document.activeElement.blur();
-    }
-});
-
-// Prevent focus when clicking anywhere (except inputs if you want)
-document.addEventListener('mousedown', (e) => {
-    const tag = e.target.tagName.toLowerCase();
-
-    // Allow only real input fields
-    if (tag !== 'input' && tag !== 'textarea') {
-        if (document.activeElement) {
-            document.activeElement.blur();
-        }
-    }
-});
